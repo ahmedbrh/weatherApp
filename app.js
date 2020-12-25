@@ -11,10 +11,10 @@ const Key = "09023dd1629b6de6ccb1315257f53645"  ;
 // // })
 // DATA APPEL :!
 const requestCity = async (city)=> { 
-    const baseUrl="http://api.openweathermap.org/data/2.5/weather"
+    const apiurl="http://api.openweathermap.org/data/2.5/weather"
     const query = `?q=${city}&appid=${Key}` 
 //make fetch call (promise call )
-const response = await fetch(baseUrl+query) ; 
+const response = await fetch(apiurl+query) ; 
 //promise data 
 
 const data = await response.json() ; 
