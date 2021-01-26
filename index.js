@@ -3,7 +3,7 @@ const cityVlue = document.querySelector('.search input');
 const cityName =document.querySelector('.ville p ') ; 
 const body = document.querySelector('.current') ;
 
-//pour recupere la date 
+//pour récupérer la date 
 function dateBuilder(d){ 
     let monthss =["january" , "february" , "March" , "april" , "Mai" , "june" , "july" , "august" , "September" , "october" , "november" , "december"] ; 
     let days = [ "sunday" , "Monday" , "tuesday" , "wednesday" , "thursday" , "friday" , "saturday", "sunday"]; 
@@ -11,16 +11,17 @@ function dateBuilder(d){
     let date = d.getDate() ;
     let monthh = monthss[d.getMonth()] ; 
     let  year = d.getFullYear(); 
-    return `${day} ${date} ${monthh} ${year}` ;  //incrementer 
+    return `${day} ${date} ${monthh} ${year}` ;  //incrémenter
+   
+    
 
 }
 // inistialiser..
 let now = new Date() ; 
 let dates = document.querySelector('.date') ; 
 dates.innerHTML = dateBuilder(now); 
-
+//convertion 
 const convertion = (kelvin) => { 
-
 celcius = Math.round(kelvin-273.15) ; 
 return celcius ;
 
