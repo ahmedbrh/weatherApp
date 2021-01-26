@@ -1,0 +1,5 @@
+[[redirects]]
+from ="https://weatherapplive.netlify.app/"
+to ="http://api.openweathermap.org/:splat"
+status = 200
+force = true
