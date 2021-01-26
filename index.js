@@ -23,7 +23,7 @@ const convertion = (kelvin) => {
 
 celcius = Math.round(kelvin-273.15) ; 
 return celcius ;
-//spitout the celsius baby 
+
 
 }
 //add an event 
@@ -48,7 +48,7 @@ updateWeatherApp = (ville)=> {
 
 //
 // function init (resultFromSerever) {
-//  if (resultFromServer.weather[0].description) {                                               //pour changer le background color still don't know how to fix it 
+//  if (resultFromServer.weather[0].description) {                                               //pour changer le background image still don't know how to fix it 
 //         case 'scattered clouds':
 // document.body.style.backgroundImage = 'url("bg1.jpg")';    
 //             break;
